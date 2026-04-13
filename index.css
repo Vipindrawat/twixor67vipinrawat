@@ -1,0 +1,12 @@
+body {
+    overflow-x: hidden;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+ul {
+    list-style: none;
+}
