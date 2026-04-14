@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/hotstar-icon.png">
     <title>JioHotstar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="/index.css">
 </head>
@@ -14,43 +17,43 @@
 
     <nav class="sidebar">
 
-        <div>
-            <img alt="JioHotstar"
+        <div class="navlogo">
+            <img class="hotstarlogo" alt="JioHotstar"
                 src="https://img.hotstar.com/image/upload/v1737554969/web-assets/prod/images/rebrand/logo.png">
         </div>
 
-        <ul>
-            <li>
+        <ul class="navlist">
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-house" aria-label="Home"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-tv" aria-label="TV"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-film" aria-label="Movies"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-futbol" aria-label="Sports"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-layer-group" aria-label="Categories"></i>
                 </a>
             </li>
-            <li>
+            <li class="navitem">
                 <a href="#">
                     <i class="fa-solid fa-user" aria-label="MySpace"></i>
                 </a>
@@ -63,20 +66,20 @@
     <main class="mainContent">
 
         <section class="hero">
-            <img src="/chainsaw-man.jpg" alt="Chainsaw-man">
+            <img class="heroimage" src="/chainsaw-man.jpg" alt="Chainsaw-man">
+
             <div class="herodescription">
-                <h3>hotstar special</h3>
-                <h1>Chainsaw Man</h1>
-                <span>new release</span>
-                <h3>2026 | 12 Languages</h3>
+                <span class="hotstarspecial">hotstar <span class="lightbluespan">special</span> </span>
+                <b>
+                    Chainsaw Man
+                </b>
+                <span class="bluespan">new release</span>
                 <p>
                     A direct sequel to the first season of the series "Chainsaw Man", featuring Denji, a young man who
-                    co-exists with a
-                    chainsaw demon. Denji encounters a new romantic interest, but will his involvement place them both
-                    in danger?
+                    co-exists with a chainsaw demon.
                 </p>
-                <h3>Japanese | Anime | Dark Romance | Supernatural</h3>
-                <button>
+                <spam>Japanese | Anime | Supernatural</spam>
+                <button class="watchnow">
                     <i class="fa-solid fa-play"></i>
                     Watch Now
                 </button>
@@ -92,9 +95,14 @@
             <img src="/5.jpg" alt="Movie 5">
             <img src="/6.jpg" alt="Movie 6">
             <img src="/7.webp" alt="Movie 7">
-            <img src="/8.jpeg" alt="Movie 8">
-            <img src="/9.jpeg" alt="Movie 9">
+            <img src="/8.jpg" alt="Movie 8">
+            <img src="/9.webp" alt="Movie 9">
             <img src="/10.webp" alt="Movie 10">
+            <img src="/11.jpg" alt="Movie 11">
+            <img src="/12.jpg" alt="Movie 12">
+            <img src="/13.avif" alt="Movie 13">
+            <img src="/14.jpeg" alt="Movie 14">
+            <img src="/15.jpg" alt="Movie 15">
         </section>
 
     </main>
@@ -102,40 +110,46 @@
     <footer>
 
         <div class="footertop">
-            <div class="">
+            <div class="spacebetween">
                 <h3>Company</h3>
-                <ul>
-                    <li>About Us</li>
-                    <li>Careers</li>
+                <ul class="lighttext">
+                    <li class="footertopitem">About Us</li>
+                    <li class="footertopitem">Careers</li>
                 </ul>
             </div>
-            <div class="">
-                <h3>View Website in</h3>
-                <h5><i class="fa-solid fa-check"></i> English</h5>
+            <div class="spacebetween">
+                <h3>View Website In</h3>
+                <span class="lighttext"><i class="fa-solid fa-check checkicon"></i> English</span>
             </div>
-            <div class="">
+            <div class="spacebetween">
                 <h3>Need Help?</h3>
-                <ul>
-                    <li>Visit Help Center</li>
-                    <li>Share Feedback</li>
+                <ul class="lighttext">
+                    <li class="footertopitem">Visit Help Center</li>
+                    <li class="footertopitem">Share Feedback</li>
                 </ul>
             </div>
-            <div class="">
+            <div class="spacebetween">
                 <h3>Connect with us</h3>
                 <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-facebook footericon"></i>
+                    <i class="fa-brands fa-x-twitter footericon"></i>
                 </div>
             </div>
         </div>
 
-        <div class="footerbotton">
-            <h5>&copy; 2026 STAR. All Rights Reserved.</h5>
-            <h5>
-                <span>Terms Of Use</span>
-                <span>Privacy Policy</span>
-                <span>FAQ</span>
-            </h5>
+        <div class="footerbotton lighttext">
+            <div class="footbottomdesc">
+                <span>&copy; 2026 STAR. All Rights Reserved.</span>
+                <span>
+                    <span>Terms Of Use</span>
+                    <span>Privacy Policy</span>
+                    <span>FAQ</span>
+                </span>
+            </div>
+            <div class="spacebetween">
+                <img class="downloadapp" src="/playstore.jpg" alt="">
+                <img class="downloadapp" src="/apple_store.png" alt="">
+            </div>
         </div>
     </footer>
 

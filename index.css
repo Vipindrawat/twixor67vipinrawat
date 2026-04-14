@@ -1,12 +1,365 @@
+html,
 body {
     overflow-x: hidden;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
 }
 
-.icon {
+/* .icon {
     height: 20px;
     width: 20px;
-}
+} */
 
 ul {
     list-style: none;
+    padding-left: 0px;
+}
+
+i {
+    color: white;
+}
+
+.navitem {
+    padding: 20px;
+}
+
+/* NAVBAR CSS */
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    width: 100px;
+    /* background-color: rgb(31, 26, 26); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotstarlogo {
+    height: 40px;
+}
+
+.navlogo {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.navlist {
+    padding-top: 150px;
+}
+
+
+
+/* MAIN CSS */
+main {
+    padding-left: 100px;
+}
+
+.maincontent {
+    position: relative;
+}
+
+.heroimage {
+    width: 110vw;
+}
+
+.herodescription {
+    width: 400px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotstarspecial {
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.lightbluespan {
+    color: rgb(122, 190, 249)
+}
+
+.bluespan {
+    color: rgb(20, 146, 255)
+}
+
+b {
+    font-family: "Kaushan Script", cursive;
+    font-size: xx-large;
+}
+
+p {
+    color: rgb(181, 169, 169);
+}
+
+button {
+    width: 90%;
+    background: linear-gradient(135deg, #00c6ff, blue, #e01571);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: medium;
+    font-weight: 900;
+}
+
+button:hover {
+    cursor: pointer;
+    background: blue;
+}
+
+.posters {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 10px;
+}
+
+.posters img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px whitesmoke,
+        0 4px 6px whitesmoke;
+    transition: transform 0.3s ease;
+}
+
+.posters img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/* FOOTER CSS */
+footer {
+    padding-left: 100px;
+    color: white;
+    padding-top: 100px;
+}
+
+.footertop {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.lighttext {
+    color: rgb(181, 169, 169);
+}
+
+.footerbotton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 30px 0;
+
+}
+
+.footbottomdesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.footbottomdesc span {
+    padding-bottom: 5px;
+}
+
+.checkicon {
+    padding-right: 10px;
+}
+
+.footericon {
+    font-size: x-large;
+    padding-left: 30px;
+}
+
+.footericon:hover {
+    cursor: pointer;
+}
+
+.footertopitem {
+    padding: 7px 0px;
+}
+
+.downloadapp {
+    height: 50px;
+    border-radius: 5px;
+}
+
+.downloadapp:hover {
+    cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+@media(max-height:730px) {
+    .navitem {
+        padding: 15px;
+    }
+
+    .navlogo {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .navlist {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:1650px) {
+    .posters {
+        gap: 30px 5px;
+    }
+
+    .posters img {
+        width: 250px;
+    }
+}
+
+@media (max-width:1475px) {
+    .heroimage {
+        width: 120vw;
+    }
+
+    .herodescription {
+        left: 150px;
+    }
+
+    .posters {
+        gap: 30px 0px;
+    }
+
+    .posters img {
+        width: 250px;
+    }
+
+}
+
+@media (max-width:1360px) {
+    .herodescription {
+        width: 350px;
+    }
+
+    .posters img {
+        width: 200px;
+    }
+}
+
+@media (max-width:1360px) {
+    .heroimage {
+        width: 130vw;
+    }
+
+    .herodescription {
+        width: 300px;
+        left: 100px;
+    }
+
+    .posters {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .posters img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:940px) {
+    .heroimage {
+        width: 120vw;
+        filter: blur(0.8px);
+    }
+
+    .herodescription {
+        bottom: 150px;
+    }
+
+    .posters img {
+        width: 150px;
+    }
+}
+
+@media(max-width:800px) {
+    .heroimage {
+        filter: blur(2px);
+    }
+
+    .herodescription {
+        bottom: 350px;
+        left: 100px;
+    }
+
+    .footertop {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+    }
+
+    .downloadapp {
+        height: 40px;
+    }
+
+    .posters {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 0px;
+    }
+
+    .posters img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+    .footerbotton {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px 30px 0;
+    }
+
+    .spacebetween {
+        padding-top: 10px;
+    }
+
+    .footertop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .heroimage {
+        width: 80vw;
+        filter: blur(0px);
+    }
+
+    .herodescription {
+        display: none;
+    }
+
+    .posters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .posters img {
+        width: 120px;
+    }
+
+    .downloadapp {
+        height: 25px;
+    }
+
+    .footericon {
+        font-size: large;
+        padding-left: 20px;
+    }
 }
