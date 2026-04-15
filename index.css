@@ -7,11 +7,6 @@ body {
     border: 0;
 }
 
-/* .icon {
-    height: 20px;
-    width: 20px;
-} */
-
 ul {
     list-style: none;
     padding-left: 0px;
@@ -21,9 +16,6 @@ i {
     color: white;
 }
 
-.navitem {
-    padding: 20px;
-}
 
 /* NAVBAR CSS */
 
@@ -31,14 +23,9 @@ i {
     height: 100%;
     position: fixed;
     width: 100px;
-    /* background-color: rgb(31, 26, 26); */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hotstarlogo {
-    height: 40px;
 }
 
 .navlogo {
@@ -46,18 +33,49 @@ i {
     padding-bottom: 30px;
 }
 
+
+.hotstarlogo {
+    height: 40px;
+}
+
 .navlist {
     padding-top: 150px;
 }
 
+.navitem {
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.navitem:hover {
+    transform: translateY(-2px);
+}
+
+.tooltip {
+    position: absolute;
+    left: 50px;
+    top: -20px;
+    cursor: pointer;
+    opacity: 0;
+
+    background: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 4px 4px 4px 0px;
+
+    font-family: "Kaushan Script", cursive;
+}
+
+.navitem:hover .tooltip {
+    opacity: 1;
+}
 
 
 /* MAIN CSS */
+
 main {
     padding-left: 100px;
-}
-
-.maincontent {
     position: relative;
 }
 
@@ -85,13 +103,14 @@ main {
     color: rgb(122, 190, 249)
 }
 
-.bluespan {
-    color: rgb(20, 146, 255)
-}
 
 b {
     font-family: "Kaushan Script", cursive;
     font-size: xx-large;
+}
+
+.bluespan {
+    color: rgb(20, 146, 255)
 }
 
 p {
@@ -108,11 +127,13 @@ button {
     margin-top: 30px;
     font-size: medium;
     font-weight: 900;
+    transition: transform 0.3s ease;
 }
 
 button:hover {
     cursor: pointer;
-    background: blue;
+    background: linear-gradient(135deg, #034253, rgb(3, 3, 50), #da0766);
+    transform: translateY(-5px);
 }
 
 .posters {
@@ -130,12 +151,13 @@ button:hover {
 }
 
 .posters img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 
 /* FOOTER CSS */
+
 footer {
     padding-left: 100px;
     color: white;
@@ -150,6 +172,27 @@ footer {
 
 .lighttext {
     color: rgb(181, 169, 169);
+}
+
+.lighttext:hover {
+    cursor: pointer;
+}
+
+.checkicon {
+    padding-right: 10px;
+}
+
+.footertopitem {
+    padding: 7px 0px;
+}
+
+.footericon {
+    font-size: x-large;
+    padding-left: 30px;
+}
+
+.footericon:hover {
+    cursor: pointer;
 }
 
 .footerbotton {
@@ -169,31 +212,17 @@ footer {
     padding-bottom: 5px;
 }
 
-.checkicon {
-    padding-right: 10px;
-}
-
-.footericon {
-    font-size: x-large;
-    padding-left: 30px;
-}
-
-.footericon:hover {
-    cursor: pointer;
-}
-
-.footertopitem {
-    padding: 7px 0px;
-}
-
 .downloadapp {
     height: 50px;
     border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 
 .downloadapp:hover {
     cursor: pointer;
+    transform: translateY(-5px);
 }
+
 
 /* RESPONSIVENESS */
 
@@ -263,10 +292,6 @@ footer {
 
     .posters {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .posters img:hover {
-        transform: scale(1.1);
     }
 }
 
